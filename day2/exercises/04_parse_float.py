@@ -20,8 +20,9 @@ locale.setlocale(locale.LC_ALL, 'sv_SE')
 file_name = "unemployment.csv"
 
 # Öppnar filen
-print "Öppnar %s" % file_name
-csv_file = csv.DictReader(open(file_name, 'rb'), delimiter=',')
+print("Öppnar %s" % file_name)
+in_file = open(file_name, 'rb')
+csv_file = csv.DictReader(in_file, delimiter=',')
 
 # Funktion för att beskriva abretslösheten
 def get_sentence(municipality, unemployment2014, unemployment2013):
