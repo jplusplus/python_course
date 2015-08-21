@@ -17,11 +17,9 @@ import locale
 
 locale.setlocale(locale.LC_ALL, 'sv_SE')
 
-file_name = "unemployment.csv"
 
 # Öppnar filen
-print("Öppnar %s" % file_name)
-in_file = open(file_name, 'rb')
+in_file = open("unemployment.csv", 'rb')
 csv_file = csv.DictReader(in_file, delimiter=',')
 
 # Funktion för att beskriva abretslösheten
