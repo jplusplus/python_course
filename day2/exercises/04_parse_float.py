@@ -13,10 +13,6 @@
 """
 
 import csv
-import locale
-
-locale.setlocale(locale.LC_ALL, 'sv_SE')
-
 
 # Öppnar filen
 in_file = open("unemployment.csv", 'rb')
