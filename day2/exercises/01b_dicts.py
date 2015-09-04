@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
 
 """ ÖVNING:
-	Lös uppgifterna neden genom att hämta rätt värden ur följande två dictionaries.
-	Skriv ut svaren med print().
+    Lös uppgifterna neden genom att hämta rätt värden ur följande två dictionaries.
+    Skriv ut svaren med print().
 
-	Exempel: pop_sthlm["kommun"] ger antalet invånare i Stockholms kommun.
+    Exempel: pop_sthlm["kommun"] ger antalet invånare i Stockholms kommun.
 """
 
 pop_sthlm = {
-	"tätort": 1372565.0,
-	"kommun": 914909.0,
-	"storstadsområde": 2205105.0
+    "tätort": 1372565.0,
+    "kommun": 914909.0,
+    "storstadsområde": 2205105.0
 }
 pop_gbg = {
-	"tätort": 549839.0,
-	"kommun": 543005.0,
-	"storstadsområde": 973261.0
+    "tätort": 549839.0,
+    "kommun": 543005.0,
+    "storstadsområde": 973261.0
 }
 
 
