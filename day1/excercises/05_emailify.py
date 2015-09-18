@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8
 
 """
 Uppgift:
@@ -6,13 +6,15 @@ Uppgift:
 - Gör namnet mejlkompatibelt och returnera en fullständig e-postadress.
 """
 
-def emailify(name, domain):
-	# Skriv din kod här!
 
-"""
-Testa att funktionen fungerar!
-"""
-print emailify("Jens Finnäs", "gmail.com")
-print emailify("Annie Lööf", "riksdagen.se")
-print emailify("David Lång", "riksdagen.se")
-print emailify("Emma Nohrén", "riksdagen.se")
+def emailify(name, domain):
+    # Skriv din kod här!
+
+
+#Testa att funktionen fungerar!
+
+emailify("Annie Lööf", "riksdagen.se")
+emailify("David Lång", "riksdagen.se")
+emailify("Emma Nohrén", "riksdagen.se")
+emailify("阿部慎太郎", "asahi.co.jp")
+emailify("Östen Rubin", "dn.se")
