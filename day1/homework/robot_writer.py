@@ -1,37 +1,30 @@
 # -*- coding: utf-8 -*-
 
-
-"""
-Hemuppgift:
-===========
-
-Skapa en funktion som tar arbetslöshetsprocenten för en viss månad vid två givna år och skriver ut en kort notis.
-En notis kan se ut ungefär så här:
-	
-	Arbetslösheten i maj var 1,3 procentenheter högre än vid motsvarande tidpunkt i fjol.
-	7,5 procent av alla arbetsföra saknade jobb, jämför med 6,2 i maj 2014.
-
-Textroboten måste vara beredd på att arbetslösheten kan öka, minska eller vara oförändrad.
-Vill man göra roboten lite mer avancerad kan man låta den ta hänsyn till förändringens storlek: "Arbetslösheten steg med HELA 2,3 procentenheter"
+""" Se robot_writer.md för instruktioner
 """
 
-def write_story(year0, unemployment0, year1, unemployment1, month):
-	# Skriv kod här!
+total_unemployment_2009 = 5.9
+total_unemployment_2014 = 8.0
+
+def write_story(municipality, unemployment_2009, unemployment_2014):
+    text = "Gör mig till en notis"
+    print(text)
+    # Skriv kod här!
 
 
 
 """ Testa roboten!
 """
 
-write_story(2014, 9.2, 2015, 8.5, "juni") 
-print "**************"
+write_story("Stockholm", 7.1, 6.6) 
+print("**************")
 
-write_story(2008, 5.9, 2009, 9.0, "november") 
-print "**************"
+write_story("Kiruna", 7.6, 4.2) 
+print("**************")
 
-write_story(2013, 8.7, 2014, 8.7, "april") 
-print "**************"
+write_story("Lessebo", 9.5, 13.2) 
+print("**************")
 
 """
-Källa: http://www.ekonomifakta.se/sv/Fakta/Arbetsmarknad/Arbetsloshet/Arbetsloshet/
+Källa: http://www.ekonomifakta.se/sv/Fakta/Regional-statistik/Din-kommun-i-siffror/
 """
