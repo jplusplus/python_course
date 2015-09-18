@@ -1,9 +1,15 @@
 # coding: utf-8
-name = "Jens Finnäs"
+def write_weather_report(degrees, cloudiness):
+    if degrees < 20:
+        print("Det är kylslaget i dag, bara %s grader, och %s"
+              % (degrees, cloudiness))
+    elif cloudiness == "strålande sol":
+        print("Vilket väder! %s grader varmt, och dessutom strålande sol!"
+              % cloudiness)
+    else:
+        print("Det är %s grader och %s" % (degrees, cloudiness))
 
-length = len(name)
-small_name = name.lower()
-english_name = name.replace("ä", "a")
-small_english_name = name.lower().replace("ä", "a")
-
-print(length)
+write_weather_report(20, "molnigt")
+write_weather_report(15, "halvklart")
+write_weather_report(27, "strålande sol")
+write_weather_report(12, "strålande sol")
