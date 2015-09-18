@@ -1,6 +1,5 @@
 # coding: utf-8
 
-
 cats = 30
 dogs = 15
 
