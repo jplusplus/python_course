@@ -20,9 +20,11 @@ data = [
 
 """
 ÖVNING:
-Skriv ut namn och arbetslösheten för 2014 för alla kommuner.
+Använd en IF-sats och skriv ut en mening som varierar beroende på om
+arbetslösheten stiger eller sjunker i kommunen.
 """
 
 for row in data:
     print("Ny rad!")
     print(row)
+    # Skriv kod här!
