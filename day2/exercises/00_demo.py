@@ -11,9 +11,10 @@ total_unemployment_2014 = 8.0
 
 diff_total = total_unemployment_2014 - total_unemployment_2009
 
+
 def write_story(municipality, unemployment_2009, unemployment_2014):
     # Räkna ut förändringen i kommunen
-    diff =  unemployment_2014 - unemployment_2009
+    diff = unemployment_2014 - unemployment_2009
 
     # Om arbetslösheten ökar
     if unemployment_2014 > unemployment_2009:
@@ -33,7 +34,7 @@ def write_story(municipality, unemployment_2009, unemployment_2014):
 
 
 """
-Skriva ut innehållet på varje rad
+Skriv ut innehållet på varje rad
 """
 for row in csv_file:
     # Gör om kolumnen för arbetslöshet från text till decimaltal

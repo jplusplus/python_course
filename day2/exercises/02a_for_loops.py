@@ -2,14 +2,14 @@
 
 
 unicorns = [
-"Joachim Kerpner",
-"Nina Svanberg",
-"Johan Ronge",
-"Christian Holmén",
-"Fredrik Laurin",
-"Olle Carlsson",
-"Lolo Tode Palm",
-"Martin Jönsson"
+    "Joachim Kerpner",
+    "Nina Svanberg",
+    "Johan Ronge",
+    "Christian Holmén",
+    "Fredrik Laurin",
+    "Olle Carlsson",
+    "Lolo Tode Palm",
+    "Martin Jönsson"
 ]
 
 """
@@ -25,7 +25,4 @@ print("Nu börjar programmet! Vi sätter räknaren på 1.")
 
 for unicorn in unicorns:
     # Skriv kod här!
-    print("Loopen körs!")
-    print(unicorn)
-
-
+    

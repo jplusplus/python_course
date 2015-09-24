@@ -15,5 +15,4 @@ def write_sentence(municipality, unemployment2014, unemployment2013):
     print("En dynamisk mening")
 
 for row in csv_file:
-    # Skriv kod här!
-    print(line)
+    """Skriv kod här!"""

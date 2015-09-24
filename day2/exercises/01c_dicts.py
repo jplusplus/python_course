@@ -13,9 +13,9 @@ solna = {
     'unemployment_2014': 4.1
 }
 
-""" 
+"""
 STEG 1:
-Ge stockholm och solna en ny egenskap som heter "change" 
+Ge stockholm och solna en ny egenskap som heter "change"
 och som beskriver förändringen.
 """
 # Skriv kod här!

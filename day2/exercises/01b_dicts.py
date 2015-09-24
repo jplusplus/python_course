@@ -14,19 +14,16 @@ solna = {
 }
 
 
-
-
 """ Hur många procentenheter har arbetslösheten stigit i Stockholm?
-""" 
+"""
 # Skriv kod här!
 
 
 """ Hur många procentenheter har arbetslösheten stigit i Solna?
-""" 
+"""
 # Skriv kod här!
 
 
 """ Hur mycket högra arbetslöshet hade Stockholm än Solna 2014?
 """
 # Skriv kod här!
-
