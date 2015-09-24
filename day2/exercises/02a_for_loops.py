@@ -21,8 +21,11 @@ o.s.v.
 """
 
 counter = 1
+print("Nu börjar programmet! Vi sätter räknaren på 1.")
+
 for unicorn in unicorns:
     # Skriv kod här!
+    print("Loopen körs!")
     print(unicorn)
 
 

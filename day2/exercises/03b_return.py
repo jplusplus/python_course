@@ -21,6 +21,8 @@ data = [
 
 ale = data[0]
 alvesta = data[2]
+print(ale)
+print(alvesta)
 
 print( get_change(ale["unemployment_2014"], ale["unemployment_2009"]) )
 print( get_change(alvesta["unemployment_2014"], ale["unemployment_2009"]) )

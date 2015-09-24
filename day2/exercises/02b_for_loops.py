@@ -1,28 +1,34 @@
 # -*- coding: utf-8 -*-
 
-data = [
-    {"municipality":"Ale","unemployment_2009":5.5,"unemployment_2014":4.9},
-    {"municipality":"Alingsås","unemployment_2009":5.7,"unemployment_2014":6},
-    {"municipality":"Alvesta","unemployment_2009":4.7,"unemployment_2014":8.9},
-    {"municipality":"Aneby","unemployment_2009":4.9,"unemployment_2014":6.2},
-    {"municipality":"Arboga","unemployment_2009":6.5,"unemployment_2014":9.4},
-    {"municipality":"Arjeplog","unemployment_2009":6.1,"unemployment_2014":5.6},
-    {"municipality":"Arvidsjaur","unemployment_2009":7.8,"unemployment_2014":7.7},
-    {"municipality":"Arvika","unemployment_2009":7,"unemployment_2014":6.9},
-    {"municipality":"Askersund","unemployment_2009":5.7,"unemployment_2014":5.5},
-    {"municipality":"Avesta","unemployment_2009":5.8,"unemployment_2014":8.1},
-    {"municipality":"Bengtsfors","unemployment_2009":8,"unemployment_2014":8.3},
-    {"municipality":"Berg","unemployment_2009":6.4,"unemployment_2014":7.3},
-    {"municipality":"Bjurholm","unemployment_2009":5.7,"unemployment_2014":9.2},
-    {"municipality":"Bjuv","unemployment_2009":7,"unemployment_2014":8.2},
-    {"municipality":"Boden","unemployment_2009":6.7,"unemployment_2014":7.8}
+
+unicorns = [
+"Joachim Kerpner",
+"Nina Svanberg",
+"Johan Ronge",
+"Christian Holmén",
+"Fredrik Laurin",
+"Olle Carlsson",
+"Lolo Tode Palm",
+"Martin Jönsson"
 ]
 
 """
 ÖVNING:
-Skriv ut namn och arbetslösheten för 2014 för alla kommuner.
+Använd funktionen len(), som funkar på både strängar och listor,
+och räkna ut hur många deltagare som har långa respektive korta namn.
 """
 
-for row in data:
-    print("Ny rad!")
-    print(row)
+long_names = 0
+short_names = 0
+total_unicorns = len(unicorns)
+
+print("Nu börjar programmet! Låt oss räkna långa och korta namn.")
+
+for unicorn in unicorns:
+    print("Loopen körs!")
+    print(unicorn)
+    # Skriv kod med en IF-sats här!
+
+print("%s av %s enhörningar har långa namn." % (long_names, total_unicorns))
+print("%s av %s enhörningar har korta namn" % (short_names, total_unicorns))
+
