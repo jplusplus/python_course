@@ -1,11 +1,21 @@
 # -*- coding: utf-8 -*-
 
-# STEG 1:
-# Sätt upp en ny virtuell miljö och installera lxml.
+# Uppgift:
+#
+# 1. Installera beautifulsoup:
+#         pip install beautifulsoup
+# 2. Skriv funktionen slugify() så att den gör vad den ska
+# 3. Öppna filer miljopartiet.csv
+# 4. Skapa en slug för varje rad
+# 5. Gör en fullständig url för varje slug
+# 6. Anropa funktionen scrape_profile_page() med adressen
+# 7. Skriv resultatet till en csv-fil.
+#    Använd den officiella dokumentationen:
+#    https://docs.python.org/2/library/csv.html
 
 import csv
 import urllib2
-import lxml # Eller beautifulsoup?
+import beautifulsoup
 
 
 # Den här bjuder vi på
@@ -14,7 +24,6 @@ def scrape_profile_page(html):
 
 
 def slugify(name):
-    # STEG 2
     """
      Alla ledande MP-politiker har profilsidor med adresser baserade
      på deras namn. T.ex. http://www.mp.se/om/mats-dahlberg
@@ -27,10 +36,6 @@ def slugify(name):
     return slug
 
 
-# STEG 3
-# Öppna filen miljopartiet.csv, samt en ny fil som vi kommer att skriva till
-
-# STEG 4
 """
     Loopa alla rader i filen miljopartiet.csv med csv.DictReader().
     Gör följande för varje politiker:
