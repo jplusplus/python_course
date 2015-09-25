@@ -11,5 +11,5 @@ parties = ["Vänsterpartiet", "Socialdemokraterna", "Miljöpartiet",
            "Centern", "Folkpartiet", "Moderaterna", "Kristdemokraterna",
            "Sverigedemokraterna"]
 
-print "Efter långa förhandlingar bildade %s och %s till slut regering med %s som statsminister" % (XX, XX, XX)
-print "%s, som tar över %s efter Fredrik Reinfeldt, får en ledarroll i oppositionen" % (XX, XX)
+print("Efter långa förhandlingar bildade %s och %s till slut regering med %s som statsminister" % (XX, XX, XX))
+print("%s, som tar över %s efter Fredrik Reinfeldt, får en ledarroll i oppositionen" % (XX, XX))
