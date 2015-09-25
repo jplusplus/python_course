@@ -15,12 +15,32 @@
 
 import csv
 import urllib2
-import beautifulsoup
+import BeautifulSoup
 
 
 # Den här bjuder vi på
-def scrape_profile_page(html):
-    pass
+def get_tag_content(soup, tag, attr):
+    result = soup.find(tag, attr)
+    if result is None:
+        return ""
+    else:
+        return result.string
+
+
+# Den här bjuder vi på
+def scrape_profile_page(url):
+    page = urllib2.urlopen(url)
+    soup = BeautifulSoup.BeautifulSoup(page.read())
+
+    name = get_tag_content(soup, 'h1', {})
+    email = get_tag_content(soup, 'a', {'class': "email"})
+    mobil = get_tag_content(soup, 'a', {'class': "tel"})
+    politician = {
+        "name": name,
+        "email": email,
+        "mobile": mobil,
+    }
+    return politician
 
 
 def slugify(name):
