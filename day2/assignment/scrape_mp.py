@@ -29,8 +29,14 @@ def get_tag_content(soup, tag, attr):
 
 # Den här bjuder vi på
 def scrape_profile_page(url):
-    page = urllib2.urlopen(url)
-    soup = BeautifulSoup.BeautifulSoup(page.read())
+    html = urllib2.urlopen(url).read()
+    soup = BeautifulSoup.BeautifulSoup(html)
+
+    intro = soup.find('div', {'class': "lead"})
+    if intro is not None:
+        description = intro.find('p').string
+    else:
+        description = ""
 
     name = get_tag_content(soup, 'h1', {})
     email = get_tag_content(soup, 'a', {'class': "email"})
@@ -39,6 +45,7 @@ def scrape_profile_page(url):
         "name": name,
         "email": email,
         "mobile": mobil,
+        "description": description,
     }
     return politician
 
