@@ -20,6 +20,9 @@ import BeautifulSoup
 
 # Den här bjuder vi på
 def get_tag_content(soup, tag, attr):
+    """ Returnerar innehållet i den första html-taggen, av typen tagg,
+        och med attributen attr. En tom sträng om ingen tagg hittades
+    """
     result = soup.find(tag, attr)
     if result is None:
         return ""
@@ -29,18 +32,30 @@ def get_tag_content(soup, tag, attr):
 
 # Den här bjuder vi på
 def scrape_profile_page(url):
+    """ Returnerar ett objekt med data om en miljöpartist, given en
+        URL till deras profilsida. Så här:
+        {"name": "", "email": "", "mobile": "", "description: ""}
+    """
+
+    # Öppna webbsidan, och hämta HTML-koden
     html = urllib2.urlopen(url).read()
     soup = BeautifulSoup.BeautifulSoup(html)
 
+    # Den korta beskrivningen ligger i en <p>-tagg, inne i en <div>-tagg,
+    # så här: <div class="lead"><p>Kommunstyrelsens ordförande</p></div>
     intro = soup.find('div', {'class': "lead"})
     if intro is not None:
         description = intro.find('p').string
     else:
         description = ""
 
+    # <h1>-taggen innehåller alltid personens namn
     name = get_tag_content(soup, 'h1', {})
+    # E-postadressen, om den finns ligger i: <a class="email">
     email = get_tag_content(soup, 'a', {'class': "email"})
+    # Mobilnumret, om det finns ligger i: <a class="tel">
     mobil = get_tag_content(soup, 'a', {'class': "tel"})
+
     politician = {
         "name": name,
         "email": email,
