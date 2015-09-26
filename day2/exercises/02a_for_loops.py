@@ -25,4 +25,5 @@ print("Nu börjar programmet! Vi sätter räknaren på 1.")
 
 for unicorn in unicorns:
     # Skriv kod här!
+    print("Nu körs loopen")
     
