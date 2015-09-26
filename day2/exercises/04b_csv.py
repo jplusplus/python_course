@@ -8,7 +8,7 @@ csv_file = csv.DictReader(in_file, delimiter=';')
 """
  Övning:
  Gör om egenskaperna "unemployment_2009" och "unemployment_2014"
- från text till decimaltal med hjälp av float().
+ från text till decimaltal med hjälp av float() och UTF-koda kommunens namn.
 """
 
 # Loopa genom csv-filen

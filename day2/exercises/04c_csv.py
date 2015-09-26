@@ -23,7 +23,7 @@ for row in csv_file:
     print(row)
 
     # Gör om text till till decimaltal
-    municipality = row["municipality"]
+    municipality = row["municipality"].decode("utf-8")
     unemployment_2009 = float(row["unemployment_2009"])
     unemployment_2014 = float(row["unemployment_2014"])
 
