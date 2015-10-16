@@ -1,0 +1,35 @@
+# coding: utf-8
+
+""" 
+Två funktioner för att 
+a) Kolla om en textsträng är ett decimaltal.
+b) Göra om en textsträng till ett decimaltal om möjligt.
+
+Båda funktionerna klarar av att hantera både engelskt och svenskt decimaltecken (. och ,). 
+"""
+
+def is_number(string):
+    try:
+        float(string)
+        return True
+    except ValueError:
+        try:
+            float(string.replace(",", "."))
+            return True
+        except ValueError:
+            return False
+
+def parse_float(string):
+    try:
+        return float(string)
+    except ValueError:
+        return float(string.replace(",", "."))
+
+print(is_number("1234"))
+print(is_number("1234.5"))
+print(is_number("1234,5"))
+print(is_number("abc1234.5"))
+
+print(parse_float("1234"))
+print(parse_float("1234.5"))
+print(parse_float("1234,5"))
