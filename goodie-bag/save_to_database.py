@@ -7,6 +7,9 @@ Databasen kan vara MySQL eller Postgres – koden är ändå densamma. Men allra
 kan sedan använda programmet SQLitebrowser för att bläddra i databasen.
 
 Läs mer om Dataset här: https://dataset.readthedocs.org/
+
+Obs! Du måste köra "pip install dataset" i din terminal/kommandotolk för att det här
+skriptet ska fungera första gången.
 """
 
 import requests
