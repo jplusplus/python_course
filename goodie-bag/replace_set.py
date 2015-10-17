@@ -17,6 +17,11 @@ text = replace_set("åbäke", {'å': 'a',
                              })
 print(text)
 
+
 text = replace_set("coka cola", {'cola': 'coka',
                                  'coka': 'cola'})
+print(text)
+
+
+text = replace_set("sju sjösjuka sjömän", {'sj': 'ʃ'})
 print(text)
