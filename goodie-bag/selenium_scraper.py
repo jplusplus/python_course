@@ -1,11 +1,17 @@
 # coding: utf-8
 
 """
-När webbsidor som innehåller mycket Javascript och formulär kan man ibland vara tvungen
-att använda biblioteket Selenium för att öppna webbsidor istället för Requests.
+När webbsidor som innehåller mycket Javascript och formulär är man ibland
+tvungen att använda biblioteket Selenium för att öppna webbsidor,
+istället för Requests.
 
-Selenium låter en simulera händelser i browsern - klick, knapptryckningar, textinmatningar.
-Selenium kommer att öppna upp ett browserfönster så att du själv kan se vad som händer.
+Selenium låter en simulera händelser i browsern - klick, knapptryckningar,
+textinmatningar. Selenium kommer att öppna upp ett browserfönster så att du
+själv kan se vad som händer.
+
+Installation:
+ pip install selenium
+ pip install beautifulsoup4
 """
 
 from selenium import webdriver
@@ -40,10 +46,10 @@ search_field.submit()
 
 """
 Du kan även kombinera Selenium med BeautifulSoup så att du när du hittat t.ex.
-en produktsida som du vill skrapa går över till BS som läser data från den som 
+en produktsida som du vill skrapa går över till BS som läser data från den som
 vi lärt oss tidigare.
 """
-soup = BeautifulSoup(driver.page_source)
+soup = BeautifulSoup(driver.page_source, "lxml")
 
 # Stäng browserfönstret efter 10 sekunder
 sleep(10)
