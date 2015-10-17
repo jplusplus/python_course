@@ -1,12 +1,14 @@
 # coding: utf-8
 
-""" 
-Två funktioner för att 
+"""
+Två funktioner för att
 a) Kolla om en textsträng är ett decimaltal.
 b) Göra om en textsträng till ett decimaltal om möjligt.
 
-Båda funktionerna klarar av att hantera både engelskt och svenskt decimaltecken (. och ,). 
+Båda funktionerna klarar av att hantera både punkt och komma som decimaltecken,
+men de hanterar inte tusentalsavgränsare.
 """
+
 
 def is_number(string):
     try:
@@ -18,6 +20,9 @@ def is_number(string):
             return True
         except ValueError:
             return False
+    except TypeError:
+        return False
+
 
 def parse_float(string):
     try:
@@ -28,6 +33,8 @@ def parse_float(string):
 print(is_number("1234"))
 print(is_number("1234.5"))
 print(is_number("1234,5"))
+print(is_number("1 234,5"))
+print(is_number("1,234.5"))
 print(is_number("abc1234.5"))
 
 print(parse_float("1234"))
