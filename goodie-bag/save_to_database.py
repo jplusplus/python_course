@@ -55,7 +55,7 @@ def save_to_db(row):
     print ("Sparar produktdata för %s" % url)
 
 
-url = "http://www.blocket.se/stockholm/Vit_garderob_63290080.htm?ca=11&w=1"
+url = "http://www.blocket.se/stockholm/Howardsoffa_och_tva_fatoljer_63346249.htm?ca=11&w=1"
 
 # Hämta produktdata
 product_details = get_product_details(url)

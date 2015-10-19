@@ -20,8 +20,8 @@ def asciify(string):
                     ("Å", "a"), ("Ä", "a"), ("Ö", "o"),
                     ("é", "e"), ("È", "e"), ("È", "E"), ("è", "e"),
                     ("Ë", "E"), ("ë", "e"), ("Ê", "E"), ("ê", "e"),
-                    ("ü", "u"), ("Ü", "u"),
-                    ("Š", "S"), ("š", "s"), ("Ž", "Z"), ("ž", "z")
+                    ("ü", "u"), ("Ü", "U"),
+                    ("Š", "S"), ("š", "s"), ("Ž", "Z"), ("ž", "z"),
                     ("Œ", "OE"), ("œ", "oe"),
                     ("Ÿ", "Y"), ("ÿ", "y"),
                     ("À", "A"), ("à", "a"), ("Á", "A"), ("á", "a"),
@@ -55,3 +55,7 @@ def emailify(string):
     string = string.lower().replace(" ", ".")
     string = asciify(string)
     return string
+
+
+print(asciify("Göteborg"))
+print(emailify("Fredrik Laurin"))
